@@ -32,7 +32,7 @@ class PageController extends Controller
             $ages[] = $age;
         }
 
-        $average = array_sum($ages) / $totalEmployees;
+        $average = ($totalEmployees > 0) ? array_sum($ages) / $totalEmployees : 0;
         $data['averageAge'] = round($average);
         return view('home', $data);
     }
