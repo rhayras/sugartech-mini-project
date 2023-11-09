@@ -19,3 +19,8 @@ Set up the backend.
     - php artisan db:seed --class=CreateUsersSeeder
 9. Then execute the command below to run the backend:
     - php artisan serve
+
+To Login, use credentials below:
+
+username: rhayras22
+password: Admin123
